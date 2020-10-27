@@ -7,5 +7,5 @@ define('_DB_NAME', 'mini_shop');
 define('_UPLOAD_PATH', 'C:/UniServerZ/www/mini_shop/uploads/');
 define('_UPLOAD_URL', 'http://localhost/mini_shop/uploads/');
 
-$admin_array = ['tad'];
+$admin_array = ['sky'];
 // error_reporting(0);
