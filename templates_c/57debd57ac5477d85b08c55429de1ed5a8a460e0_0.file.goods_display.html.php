@@ -1,17 +1,49 @@
+<?php
+/* Smarty version 3.1.29, created on 2020-11-08 19:24:30
+  from "C:\UniServerZ\www\test-des\templates\goods_display.html" */
+
+if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
+  'has_nocache_code' => false,
+  'version' => '3.1.29',
+  'unifunc' => 'content_5fa845ee63da90_22681418',
+  'file_dependency' => 
+  array (
+    '57debd57ac5477d85b08c55429de1ed5a8a460e0' => 
+    array (
+      0 => 'C:\\UniServerZ\\www\\test-des\\templates\\goods_display.html',
+      1 => 1604863461,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5fa845ee63da90_22681418 ($_smarty_tpl) {
+?>
 <div class="row">
   <div class="col-md-6">
-    <img src="{$goods.pic}" alt="{$goods.goods_title}" class="img-thumbnail">
+    <img src="<?php echo $_smarty_tpl->tpl_vars['goods']->value['pic'];?>
+" alt="<?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_title'];?>
+" class="img-thumbnail">
   </div>
   <div class="col-md-6">
-    <h2>{$goods.goods_title}</h2>
-    <p>售價：{$goods.goods_price}元整</p>
-    <p>人氣：{$goods.goods_counter}</p>
+    <h2><?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_title'];?>
+</h2>
+    <p>售價：<?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_price'];?>
+元整</p>
+    <p>人氣：<?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_counter'];?>
+</p>
     <div>
-      <a href="index.php?op=add_to_cart&goods_sn={$goods.goods_sn}&goods_title={$goods.goods_title}&goods_amount=1" class="btn btn-primary" role="button">加入購物車</a>
-      {if $isAdmin}
-        <a href="tool.php?op=goods_form&goods_sn={$goods.goods_sn}" class="btn btn-warning">編輯商品</a>
-        <a href="tool.php?op=delete_goods&goods_sn={$goods.goods_sn}" class="btn btn-danger">刪除商品</a>
-      {/if}
+      <a href="index.php?op=add_to_cart&goods_sn=<?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_sn'];?>
+&goods_title=<?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_title'];?>
+&goods_amount=1" class="btn btn-primary" role="button">加入購物車</a>
+      <?php if ($_smarty_tpl->tpl_vars['isAdmin']->value) {?>
+        <a href="tool.php?op=goods_form&goods_sn=<?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_sn'];?>
+" class="btn btn-warning">編輯商品</a>
+        <a href="tool.php?op=delete_goods&goods_sn=<?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_sn'];?>
+" class="btn btn-danger">刪除商品</a>
+      <?php }?>
     </div>
   </div>
 </div>
@@ -28,7 +60,8 @@
 <div class="tab-content">
   <div role="tabpanel" class="tab-pane active" id="goods">
     <h3>商品介紹</h3>
-    <p>{$goods.goods_content}</p>
+    <p><?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_content'];?>
+</p>
   </div>
   <div role="tabpanel" class="tab-pane" id="note">
     <h3>退換貨須知</h3>
@@ -59,3 +92,5 @@
   </div>
 </div>
 
+<?php }
+}

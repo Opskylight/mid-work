@@ -2,10 +2,13 @@
   {foreach from=$all_goods item=goods}
     <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <a href="index.php?goods_sn={$goods.goods_sn}"><img src="{$goods.pic}" alt="{$goods.goods_title}" class="img-fluid"></a>
+        <a href="index.php?goods_sn={$goods.goods_sn}"><img src="{$goods.pic}" alt="{$goods.goods_title}"></a>
         <div class="caption">
-          <div style="height: 60px;">
-            <h3><a href="index.php?goods_sn={$goods.goods_sn}">{$goods.goods_title}</a></h3>
+          <div style="height: 30px;">
+            <h3><a href="index.php?goods_sn={$goods.goods_sn}"><b>{$goods.goods_title}</b></a></h3>
+          </div>
+          <div>
+            <button class="btn btn-secondary" type="button">評論此商品</button>
           </div>
           <div class="row">
             <div class="col-md-6">售價：{$goods.goods_price}</div>
