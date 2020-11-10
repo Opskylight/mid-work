@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-08 19:24:56
+/* Smarty version 3.1.29, created on 2020-11-10 05:33:01
   from "C:\UniServerZ\www\test-des\templates\goods_list.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fa84608b712e9_78249585',
+  'unifunc' => 'content_5faa260d079d51_16810999',
   'file_dependency' => 
   array (
     '20b009ae06e6fd282ed1840dbada959429c07db9' => 
     array (
       0 => 'C:\\UniServerZ\\www\\test-des\\templates\\goods_list.html',
-      1 => 1604862632,
+      1 => 1604982893,
       2 => 'file',
     ),
   ),
@@ -19,7 +19,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5fa84608b712e9_78249585 ($_smarty_tpl) {
+function content_5faa260d079d51_16810999 ($_smarty_tpl) {
 ?>
 <div class="row">
   <?php
@@ -47,7 +47,8 @@ $__foreach_goods_0_saved_local_item = $_smarty_tpl->tpl_vars['goods'];
 </b></a></h3>
           </div>
           <div>
-            <button class="btn btn-secondary" type="button">評論此商品</button>
+            <button class="btn btn-secondary" type="button"><a href="index.php?goods_sn=<?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_sn'];?>
+">評論此商品</a></button>
           </div>
           <div class="row">
             <div class="col-md-6">售價：<?php echo $_smarty_tpl->tpl_vars['goods']->value['goods_price'];?>
@@ -69,7 +70,6 @@ $_smarty_tpl->tpl_vars['goods'] = $__foreach_goods_0_saved_item;
 
 共有 <?php echo $_smarty_tpl->tpl_vars['total']->value;?>
  件商品
-<?php echo $_smarty_tpl->tpl_vars['bar']->value;?>
-
-<?php }
+<?php echo $_smarty_tpl->tpl_vars['bar']->value;
+}
 }

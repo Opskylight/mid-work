@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-08 19:24:30
+/* Smarty version 3.1.29, created on 2020-11-09 17:00:40
   from "C:\UniServerZ\www\test-des\templates\goods_display.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fa845ee63da90_22681418',
+  'unifunc' => 'content_5fa975b862f032_78638246',
   'file_dependency' => 
   array (
     '57debd57ac5477d85b08c55429de1ed5a8a460e0' => 
     array (
       0 => 'C:\\UniServerZ\\www\\test-des\\templates\\goods_display.html',
-      1 => 1604863461,
+      1 => 1604941233,
       2 => 'file',
     ),
   ),
@@ -19,8 +19,12 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
   array (
   ),
 ),false)) {
-function content_5fa845ee63da90_22681418 ($_smarty_tpl) {
+function content_5fa975b862f032_78638246 ($_smarty_tpl) {
 ?>
+<link rel="stylesheet" href="pingfen.css" type="text/css">
+<?php echo '<script'; ?>
+ type="text/javascript" src="pingfen.js"><?php echo '</script'; ?>
+>
 <div class="row">
   <div class="col-md-6">
     <img src="<?php echo $_smarty_tpl->tpl_vars['goods']->value['pic'];?>
@@ -89,8 +93,13 @@ function content_5fa845ee63da90_22681418 ($_smarty_tpl) {
       <li>此功能尚未完備</li>
       <li>敬請期待</li>
     </ul>
+    <div class="ratings">
+      <div class="empty_star">★★★★★</div>
+      <div class="full_star">★★★★★</div>
+      </div>
   </div>
 </div>
+
 
 <?php }
 }
