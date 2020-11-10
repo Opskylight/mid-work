@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1:3306
--- 產生時間： 2020-11-03 08:14:31
+-- 產生時間： 2020-11-10 07:58:43
 -- 伺服器版本： 8.0.18
 -- PHP 版本： 7.4.5
 
@@ -65,6 +65,18 @@ INSERT INTO `bill_detail` (`bill_sn`, `goods_sn`, `goods_amount`, `goods_total`)
 -- --------------------------------------------------------
 
 --
+-- 資料表結構 `comment`
+--
+
+CREATE TABLE `comment` (
+  `user_name` varchar(25) NOT NULL,
+  `goods_n` int(10) NOT NULL,
+  `comments` varchar(65) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- 資料表結構 `goods`
 --
 
@@ -85,7 +97,7 @@ INSERT INTO `goods` (`goods_sn`, `goods_title`, `goods_content`, `goods_price`, 
 (1, '速度之靴', '<p>高級皮革打造</p>\r\n\r\n<p>體驗者都說感覺速度變快了點</p>\r\n', 300, 2, '2020-11-03 06:09:23'),
 (2, '巨人腰帶', '<p>X的巨人腰帶</p>\r\n\r\n<p>穿上會顯胖</p>\r\n\r\n<p>為了胖不了的您所設計</p>\r\n', 1000, 2, '2020-11-03 06:50:22'),
 (3, '布甲', '<p>堅韌耐用</p>\r\n\r\n<p>保護你最軟的一塊</p>\r\n', 300, 4, '2020-11-03 06:55:11'),
-(4, '生命藥水', '<p>紅色的不明液體</p>\r\n\r\n<p>賣家堅持這是某種藥水</p>\r\n\r\n<p>可以治療傷口而不是傷痛喔</p>\r\n', 50, 4, '2020-11-03 07:52:51');
+(4, '生命藥水', '<p>紅色的不明液體</p>\r\n\r\n<p>賣家堅持這是某種藥水</p>\r\n\r\n<p>可以治療傷口而不是傷痛喔</p>\r\n', 50, 22, '2020-11-03 07:52:51');
 
 -- --------------------------------------------------------
 
@@ -151,7 +163,7 @@ ALTER TABLE `users`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `bill`
 --
 ALTER TABLE `bill`
-  MODIFY `bill_sn` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '帳單編號', AUTO_INCREMENT=2;
+  MODIFY `bill_sn` mediumint(8) UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '帳單編號', AUTO_INCREMENT=3;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `goods`

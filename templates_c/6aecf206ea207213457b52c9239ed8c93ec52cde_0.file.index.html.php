@@ -1,17 +1,17 @@
 <?php
-/* Smarty version 3.1.29, created on 2020-11-08 18:50:46
+/* Smarty version 3.1.29, created on 2020-11-10 06:59:06
   from "C:\UniServerZ\www\test-des\templates\index.html" */
 
 if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl, array (
   'has_nocache_code' => false,
   'version' => '3.1.29',
-  'unifunc' => 'content_5fa83e06833714_65033244',
+  'unifunc' => 'content_5faa3a3a912677_89691591',
   'file_dependency' => 
   array (
     '6aecf206ea207213457b52c9239ed8c93ec52cde' => 
     array (
       0 => 'C:\\UniServerZ\\www\\test-des\\templates\\index.html',
-      1 => 1604861440,
+      1 => 1604991477,
       2 => 'file',
     ),
   ),
@@ -28,7 +28,7 @@ if ($_smarty_tpl->smarty->ext->_validateCompiled->decodeProperties($_smarty_tpl,
     'file:index_side.html' => 1,
   ),
 ),false)) {
-function content_5fa83e06833714_65033244 ($_smarty_tpl) {
+function content_5faa3a3a912677_89691591 ($_smarty_tpl) {
 ?>
 <!DOCTYPE html>
 <html lang="zh-Hant">
@@ -59,7 +59,7 @@ function content_5fa83e06833714_65033244 ($_smarty_tpl) {
 >
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="bois">
       <div id="shop_head">
         <a href="index.php">
           <img src="images/titt.jpg" alt="<?php echo $_smarty_tpl->tpl_vars['shop_name']->value;?>
